@@ -333,9 +333,9 @@
             if (clickStats.yesClicks > 0) {
                 if (clickStats.noAttempts === 0) {
                     statsDiv.innerHTML = '💘 First try! You really love me! 💘';
-                } else if (clickStats.noAttempts === 1) {
+                } else if (clickStats.noAttempts === 30) {
                     statsDiv.innerHTML = '😊 Only ran away once! Not bad! 😊';
-                } else if (clickStats.noAttempts < 5) {
+                } else if (clickStats.noAttempts < 30) {
                     statsDiv.innerHTML = `🏃‍♀️ You ran away ${clickStats.noAttempts} times before saying YES! 💕`;
                 } else {
                     statsDiv.innerHTML = `😍 ${clickStats.noAttempts} attempts? You made me work for it! 💖`;
